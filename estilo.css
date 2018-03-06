@@ -1,38 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
-@import url('https://fonts.googleapis.com/css?family=Lobster');
-html{
-	background-color: #F4D2F4;
-}
-
-body>header>h1{
-	font-family: 'Great Vibes', cursive;
-	font-size: 3vw;
-	color: #56006E;
-	vertical-align: middle;
-	display:table-cell;
-}
-body>header>h3{
-	font-size: 1.6em;
-	padding-bottom: 0.5em;
-}
-
-body>header{
-	display:table;
-	/*background-image: url(recetas-fondo.jpg);*/
-	background-color: white;
-	width: 100%;
-	height: 24vmin;
-	left: 0;
-	top: 0;
-}
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do');
+/*Barra de navegación*/
 body>nav{
-	background-color: #333;
+	background-color: #E28E16
 }
 body>nav>ul{
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	max-height: 2.2em;
+	max-height: 1.5em;
 	overflow: hidden;
 
 	transition: max-height 1s ease-in-out;
@@ -42,16 +17,14 @@ body>nav>ul{
 		padding: .2em;
 		text-decoration: none;
 		font-weight: bold;
-		color: white;
 	}
 	body>nav>ul>li>a:hover{
-		background-color: #6D6D6D;
+		background-color: #21196B;
+		color: #fff;
 	}
 	body>nav>ul>li:first-of-type>label{
 		font-weight: bold;
-		color: white;
-		padding: 0 .2em;
-		font-size: 2em;
+		font-size: 1.5em;
 		display: inline-block;
 		cursor: pointer;
 		transition:transform 1s;
@@ -61,14 +34,16 @@ body>nav>ul{
 	display: none;					
 	}
 	#ckbmenu:checked+ul{
-		max-height: 14em;
+		max-height: 9em;
 	}
 	#ckbmenu:checked+ul>li:first-of-type>label{
 		transform:rotate(90deg);
 	}
+								/* Fin haburguesa*/
+	/*contenido*/
 /* MAIN */
 body>section>div{
-	width: 60%;
+	width: 55%;
 	margin:auto;
 	clear: both;
 }
@@ -119,12 +94,13 @@ body>footer:link{
 	margin:0;
 	padding: 0;
 }
-
+#Titulo{
+	vertical-align: middle;
+	display:table-cell;
+}
 #Subtitulo{
 	vertical-align: bottom;
 	display: table-cell;
-	align-content: right;
-	font-size: 1.5em;
 }
 #texto_footer{
 	padding-top: 2em;
@@ -137,24 +113,20 @@ body>footer:link{
 #texto_footer>a:hover{
 	background-color: #6D6D6D
 }
-/*MEDIA QUEIRIES*/
+/*MEDIA QUERIES*/
 @media all and (min-width:480px){
-	body>nav{
-		padding: 0.75em;
-		font-size: 1.25em;
-	}
 	body>nav>ul>li{
-		display:inline-block;
+		display: inline-block;
 	}
 	body>nav>ul>li:first-of-type{
-		display:none;
+		display: none;
 	}
 	body>nav>ul>li>a>span:nth-of-type(2){
-		display:none;
+		display: none;
 	}
-} 
-@media all and(min-width: 640px){
-	body>nav>ul>li>a>span:nth-of-type(2){
-		display: inline-block;
+}
+@media all and (min-width:640px){
+	body>nav>ul>li>a<span:nth-of-type(2){
+		display:inline-block;
 	}
 }
