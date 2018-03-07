@@ -6,10 +6,12 @@ html{
 
 body>header>h1{
 	font-family: 'Great Vibes', cursive;
-	font-size: 3vw;
+	font-size: 3em;
 	color: #56006E;
 	vertical-align: middle;
 	display:table-cell;
+
+
 }
 body>header>h3{
 	font-size: 1.6em;
@@ -66,14 +68,35 @@ body>nav>ul{
 	#ckbmenu:checked+ul>li:first-of-type>label{
 		transform:rotate(90deg);
 	}
+	body>nav>form{
+		display: inline-block;
+		*display: inline;
+		border: 1px;
+		padding: 3px 5px;
+		
+	}
+	.searchform .searchfield {
+		background: #fff;
+		padding: 6px 6px 6px 8px;
+		border: solid 1px #bcbbbb;
+		outline: none;
+
+
+	}
+	.searchform .searchbutton {
+		color: #fff;
+		background: #5f5f5f;
+		border-radius: 2em;
+
+	}
 /* MAIN */
 body>section>div{
-	width: 60%;
+	width: 80%;
 	margin:auto;
 	clear: both;
 }
 body>section>div>article{
-	width: 50%;
+	width: 100%;
 	float: left;
 	padding: 40px 40px;
 	box-sizing: border-box;
@@ -103,6 +126,10 @@ body>section>div>article>a>img{
 body>section>div>article>footer{
 	padding-top: 1em;
 	border-top: 1px dotted #000000; /*añade linea de puntos*/
+}
+body>section>div>article>footer>a{
+	text-decoration: none;
+	color: black;
 }
 body>footer{
 	display: table;
@@ -139,6 +166,9 @@ body>footer:link{
 }
 /*MEDIA QUEIRIES*/
 @media all and (min-width:480px){
+	body>header>h1{
+		text-decoration: 200%;
+	}
 	body>nav{
 		padding: 0.75em;
 		font-size: 1.25em;
@@ -152,6 +182,44 @@ body>footer:link{
 	body>nav>ul>li>a>span:nth-of-type(2){
 		display:none;
 	}
+	body>section>div{
+	width: 60%;
+	margin:auto;
+	clear: both;
+}
+body>section>div>article{
+	width: 50%;
+	float: left;
+	padding: 40px 40px;
+	box-sizing: border-box;
+}
+body>section>div>article>header>a>h1{
+	font-family: 'Lobster', cursive;
+	font-size: 1.5em;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 100%;
+}
+body>section>div>article>header{
+	text-align: center;
+	margin-bottom: 10px;
+	
+
+}
+body>section>div>article>header>a{
+	text-decoration: none;
+	color: #000000;
+}
+body>section>div>article>a>img{
+	width: 100%;
+}
+
+body>section>div>article>footer{
+	padding-top: 1em;
+	border-top: 1px dotted #000000; /*añade linea de puntos*/
+}
+
 } 
 @media all and(min-width: 640px){
 	body>nav>ul>li>a>span:nth-of-type(2){
