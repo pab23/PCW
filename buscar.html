@@ -32,20 +32,66 @@
 		
 	</nav>
 	<form name="Busqueda" method="post" id="cuerpo_registro">
-	<h2 id="titulo_registro">Búsqueda de recetas</h2>
+	<h2 id="titulo_busqueda">Búsqueda de recetas</h2>
 	<div>
-		<label for="username">Nombre de receta:</label><input type="text" autofocus id="nombrereceta"><br>
-		<label for="Nombre">Ingredientes:</label><input type="text" id="Nombre"><br>
-		<label for="password">Tiempo de preparación:</label><input type="numeric" id="preparacion"><br>
+
+		<label for="nombrereceta">Nombre de receta:</label><input type="text" autofocus id="nombrereceta"><br>
+		<label for="ingredientes">Ingredientes:</label><input type="text" id="ingredientes"><br>
+		<label for="timeprep">Tiempo de preparación:</label><input type="number" min="5" max="120" id="timeprep" ><br>
 		<label for="password2">Dificultad:</label><input type="password" id="password2"><br>
-		<label for="email">Correo electrónico:</label><input type="email" id="email"><br>
-		<label for="fecnam">Fecha de nacimiento:</label><input type="date" id="fecnam"><br>
+		<label for="comensales">Número de comensales:</label><input type="number" min="1" id="comensales"><br>
+		<label for="autor">Autor:</label><input type="name" maxlength="45" value=""  id="autor"><br>
+
+
+
 	<div>
 	<input type="submit" value="enviar">
 	<input type="reset" value="limpiar">
 	</div>
 	</div>
 	</form>
+
+
+	-----------------------------------------------------------
+	---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	<section>
+	<h2 id="titulo_resultados">Resultados de la búsqueda</h2>
+		<div>
+			<article>
+				<header>
+					<a href="receta.html"><h1>Pollo desmechado a la barbacoa</h1></a>
+				</header>
+				<body>
+					<a href="receta.html"><img src="pollo desmechado a la barbacoa.png" ></a><p>El mejor pollo para toda la familia.</p>
+				</body>
+				<footer>
+					Subido el d&iacutea <i><time datetime="16-03-2018">16 de marzo de 2018</time></i> por <a href="buscar.html"><b>Pepe Garc&iacutea Cort&eacutes</b></a>.
+				</footer>
+			</article>
+		
+			<article>
+				<header><a href="receta.html"><h1 title="Churros rellenos de caramelo">Churros rellenos de caramelo</h1></a></header><body><a href="receta.html"><img src="churros.jpg" ></a><p>Los mejores churros para toda la familia.</p></body> <footer>Subido el d&iacutea <i><time datetime="16-03-2018">16 de marzo de 2018</time></i> por <a href="buscar.html"><b>Pepe Garc&iacutea Cort&eacutes</b></a>.</footer>
+			</article>
+			
+				<article>
+					<header><a href="receta.html"><h1>Ensalada de canónigos y melocotón.</h1></a></header><body><a href="receta.html"><img src="ensalada.jpg" ></a><p>La mejor ensalada para toda la familia.</p></body><footer>Subido el d&iacutea <i><time datetime="16-03-2018">16 de marzo de 2018</time></i> por <a href="buscar.html"><b>Pepe Garc&iacutea Cort&eacutes</b></a>.</footer>
+			</article>
+			
+				<article>
+					<header><a href="receta.html"><h1 title="Espaghetis de vino tinto aderezados con queso parmesano.">Espaghetis de vino tinto aderezados con queso parmesano.</h1></a></header><body><a href="receta.html"><img src="espaguetis-de-vino-tinto-con-parmesano_ampliacion.jpg" ></a><p>Los mejores espaghetis para toda la familia.</p></body><footer>Subido el d&iacutea <i><time datetime="16-03-2018">16 de marzo de 2018</time></i> por <a href="buscar.html"><b>Pepe Garc&iacutea Cort&eacutes</b></a>.</footer>
+			</article>
+			
+				<article>
+					<header><a href="receta.html"><h1>Hamburguesa de quinoa y guacamole</h1></a></header><body><a href="receta.html"><img src="hamburguesa quinoa.gif" ></a><p>La mejor hamburguesa para toda la familia.</p></body><footer>Subido el d&iacutea <i><time datetime="16-03-2018">16 de marzo de 2018</time></i> por <a href="buscar.html"><b>Pepe Garc&iacutea Cort&eacutes</b></a>.</footer>
+			</article>
+			
+				<article>
+					<header><a href="receta.html"><h1>Pomelos gratinados con edulcorantes naturales.</h1></a></header><body><a href="receta.html"><img src="pomelosgratinados.jpg" ></a><p>La mejor fruta para toda la familia.</p></body><footer>Subido el d&iacutea <i><time datetime="16-03-2018">16 de marzo de 2018</time></i> por <a href="buscar.html"><b>Pepe Garc&iacutea Cort&eacutes</b></a>.</footer>
+			</article>
+		</div>
+	</section>
+
 <footer>
 	<div id="texto_footer" align="center">
 	<a href="acerca.html">Contacto</a>

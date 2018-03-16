@@ -3,6 +3,11 @@
 html{
 	background-color: #F4D2F4;
 }
+*{
+	box-sizing: border-box;
+	padding:0;
+	margin: 0;
+}
 
 body>header>h1{
 	font-family: 'Great Vibes', cursive;
@@ -57,8 +62,8 @@ body>nav>ul{
 		display: inline-block;
 		cursor: pointer;
 		transition:transform 1s;
-
-	}							/* Menu hanburguesa*/
+	
+	}						/* Menu hanburguesa*/
 	#ckbmenu{
 	display: none;					
 	}
@@ -143,10 +148,7 @@ body>footer{
 body>footer:link{
 	text-decoration: none;
 }
-*{
-	margin:0;
-	padding: 0;
-}
+
 
 #Subtitulo{
 	vertical-align: bottom;
@@ -166,38 +168,7 @@ body>footer:link{
 	background-color: #6D6D6D
 }
 
-body>section>div>article{
-	width: 50%;
-	float: left;
-	padding: 40px 40px;
-	box-sizing: border-box;
-}
-body>section>div>article>header>a>h1{
-	font-family: 'Lobster', cursive;
-	font-size: 1.5em;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
-	width: 100%;
-}
-body>section>div>article>header{
-	text-align: center;
-	margin-bottom: 10px;
-	
 
-}
-body>section>div>article>header>a{
-	text-decoration: none;
-	color: #000000;
-}
-body>section>div>article>a>img{
-	width: 100%;
-}
-
-body>section>div>article>footer{
-	padding-top: 1em;
-	border-top: 1px dotted #000000; /*añade linea de puntos*/
-}
 #cuerpo_registro{
 	margin: 0 auto;
 	text-align: center;
@@ -222,17 +193,23 @@ body>section>div>article>footer{
 	margin: 0.7em;
 	font-family: 'Lobster', cursive; 
 }
+#titulo_busqueda{
+	font-size: 2.5em;
+	margin: 0.7em;
+	font-family: 'Lobster', cursive; 
+}
+#titulo_resultados{
+	font-size: 2.5em;
+	margin: 0.7em;
+	text-align: center;
+	font-family: 'Lobster', cursive; 
+}
 #formulario_login>label{
 	margin-top: 1em;
 }
 /*MEDIA QUERIES*/
+ 
 
-} 
-@media all and(min-width: 640px){
-	body>nav>ul>li>a>span:nth-of-type(2){
-		display: inline-block;
-	}
-}
 @media all and (min-width:480px){
 	body>header>h1{
 		text-decoration: 200%;
@@ -247,11 +224,23 @@ body>section>div>article>footer{
 	body>nav>ul>li:first-of-type{
 		display:none;
 	}
-	body>nav>ul>li>a>span:nth-of-type(2){
+	body>nav>ul>li>a>span>span{
 		display:none;
 	}
 	body>section>div{
 	width: 60%;
 	margin:auto;
 	clear: both;
+	}
+}
+@media all and (min-width:640px){
+	body>nav>ul>li>a>span>span{
+		display:inline;
+	}
+	body>section>div>article{
+		width: 50%;
+	}
+	body>section>div{
+		width: 70;
+	}
 }
