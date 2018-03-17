@@ -149,8 +149,15 @@ body>footer{
 	height: 8vmin;
 	
 }
+body>footer>span:first-of-type{
+	color: #009407;
+}
 body>footer:link{
 	text-decoration: none;
+}
+#cambiar_pagina{
+	margin: 0.2em;
+	text-align: center;
 }
 
 
