@@ -288,6 +288,9 @@ body>footer:link{
 	background-color: white;
 	padding: 0.2em;
 }
+#parrafo{
+	text-align: justify;
+}
 /*MEDIA QUERIES*/
  
 
