@@ -18,19 +18,46 @@
 			<input type="checkbox" id="ckbmenu">
 			<ul>
 				<li><label for="ckbmenu">&equiv;</label></li>
-				<li><a href="index.html"><span class="icon-home">Inicio</span> </a> </li>
-				<li><a href="buscar.html"><span class="icon-search">Buscar</span></a></li>
-				<li><a href="login.html"><span class="icon-login">Login</span> </a> </li>
-				<li><a href="registro.html"><span class="icon-address-book">Registro</span> </a></li>
-				<li><a href=""><span class="icon-logout">Logout</span></a> </li>
-				<li><a href="nueva-receta.html"><span class="icon-pencil-neg">Nueva Receta</span></a></li>
-				<form align="right">
-					<input type="search" placeholder="Buscar..." />
-					<input type="button" value="Ir"/>
-				</form>
+				<li><a href="index.html"><span class="icon-home"><span>Inicio</span></span> </a> </li>
+				<li><a href="buscar.html"><span class="icon-search"><span>Buscar</span></span></a></li>
+				<li><a href="login.html"><span class="icon-login"><span>Login</span></span> </a> </li>
+				<li><a href="registro.html"><span class="icon-address-book"><span>Registro</span></span> </a></li>
+				<li><a href=""><span class="icon-logout"><span>Logout</span></span></a> </li>
+				<li><a href="nueva-receta.html"><span class="icon-pencil-neg"><span>Nueva Receta</span></span></a></li>
 		</ul>
 		
 	</nav>
+	<form id="nueva_receta">
+		<h2>A&ntildeadir nueva receta</h2>
+		<label for="nombre_receta">Nombre de la receta: </label><input  autofocus required type="text" id="nombre_receta" pattern="{,250}"><br>
+		<label for="elaboracion">Elaboraci&oacuten: </label><input type="text" required id="elaboracion"><br>
+		<label for="no_comensales">Número de comensales: </label><input type="number" required id="no_comensales" min="1"><br>
+		<label for="t_elaboracion">Tiempo de elaboración: </label><input type="number" required id="t_elaboracion" min="5"><br>
+		Dificultad: 
+		<select required id="dificultad_receta">
+			<option value="alta">Alta</option>
+			<option value="media">Media</option>
+			<option value="baja">Baja</option>
+		</select><br>
+		<div id="ingredientes">
+		<label for="ingredientes">Añadir nuevo ingrediente</label><input  list="ingredientes" id="ingredientes"><button>Añadir</button>
+		<h3>Ingredientes</h3>
+		<ul>
+			<li>Pollo</li>
+			<li>Queso parmesano</li>
+			<li>Harina</li>
+			<li>Aceite de oliva</li>
+			<li>Mango</li>
+		</ul>
+	</div>
+		<label for="fotos">A&ntildeadir imagen</label><input required type="file" id="fotos"><br>
+		<button>X</button><img src="espaguetis-de-vino-tinto-con-parmesano_ampliacion.jpg">
+		<textarea pattern="{,250}" rows="14">Lorem ipsum dolor sit amet, consectetur adipisicing.</textarea><br>
+		<button>X</button><img src="churros.jpg">
+		<textarea pattern="{,250}" rows="14">Lorem ipsum dolor sit amet, consectetur adipisicing.</textarea><br>
+		<input id="boton_subir" type="submit" value="Subir">
+
+	</form>
 	
 <footer>
 	<div id="texto_footer" align="center">

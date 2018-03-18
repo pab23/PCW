@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 	<link rel="stylesheet" href="css/fontello.css">
 	<title>El Recetorio de Mike</title>
-	<a id="Inicio"></a>
+	<a name="Inicio"></a>
 	<link rel="shortcut icon" type="image/x-icon" href="44.ico" />
 </head>
 <body>
@@ -18,22 +18,18 @@
 			<input type="checkbox" id="ckbmenu">
 			<ul>
 				<li><label for="ckbmenu">&equiv;</label></li>
-				<li><a href="index.html"><span class="icon-home">Inicio</span> </a> </li>
-				<li><a href="buscar.html"><span class="icon-search">Buscar</span></a></li>
-				<li><a href="login.html"><span class="icon-login">Login</span> </a> </li>
-				<li><a href="registro.html"><span class="icon-address-book">Registro</span> </a></li>
-				<li><a href=""><span class="icon-logout">Logout</span></a> </li>
-				<li><a href="nueva-receta.html"><span class="icon-pencil-neg">Nueva Receta</span></a></li>
-				<form align="right">
-					<input type="search" placeholder="Buscar..." />
-					<input type="button" value="Ir"/>
-				</form>
+				<li><a href="index.html"><span class="icon-home"><span>Inicio</span></span> </a> </li>
+				<li><a href="buscar.html"><span class="icon-search"><span>Buscar</span></span></a></li>
+				<li><a href="login.html"><span class="icon-login"><span>Login</span></span> </a> </li>
+				<li><a href="registro.html"><span class="icon-address-book"><span>Registro</span></span> </a></li>
+				<li><a href=""><span class="icon-logout"><span>Logout</span></span></a> </li>
+				<li><a href="nueva-receta.html"><span class="icon-pencil-neg"><span>Nueva Receta</span></span></a></li>
 		</ul>
 		
 	</nav>
 	<form align="center" id="formulario_login">
 		<h2 id="titulo_registro">Iniciar sesi&oacuten</h2>
-		<label for="username">Nombre de usuario</label> <input type="text" id="" ="username"><br>
+		<label for="username">Nombre de usuario</label> <input type="text" id="username" autofocus><br>
 		<label for="password">Contrase&ntildea</label> <input type="password" id="contraeña"><br>
 		Recordar mi contrase&ntildea<input type="checkbox" id="recordar"><br>
 		<input type="submit" value="Entrar">

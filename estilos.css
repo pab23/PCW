@@ -96,10 +96,15 @@ body>nav>ul{
 
 	}
 /* MAIN */
+body>section{
+	margin: 0.5em;
+}
 body>section>div{
 	width: 80%;
-	margin:auto;
+	margin: 0.5em;
 	clear: both;
+	background-color: white;
+	padding-bottom: 0.2em;
 }
 body>section>div>article{
 	width: 100%;
@@ -148,9 +153,6 @@ body>footer{
 	width: 100%;
 	height: 8vmin;
 	
-}
-body>footer>span:first-of-type{
-	color: #009407;
 }
 body>footer:link{
 	text-decoration: none;
@@ -214,12 +216,78 @@ body>footer:link{
 	text-align: center;
 	font-family: 'Lobster', cursive; 
 }
+#titulo_receta{
+	font-size: 2.5em;
+	margin: 0.7em;
+	text-align: center;
+	font-family: 'Lobster', cursive; 
+}
+#titulo_receta>a{
+	text-decoration: none;
+}
+#titulo_receta>a:visited{
+	text-decoration: none;
+	color: black;
+}
+#cuerpo_receta{
+	margin: 10px 20%;
+	background-color: white;
+	padding: 0.2em;
+}
+#nuevocomentario{
+	text-align: center;
+	margin-top: 10px;
+}
+#taid{
+	display: block;
+	margin: auto;
+}
+#comentario{
+	margin: 2em;
+	background-color: #B9EDFF;
+	padding: 0.2em;
+}
+#imagen_receta{
+	display: block;
+	margin: auto;
+	width: 75%;
+}
 #formulario_login>label{
 	font-size: 1.5em;
 }
 #formulario_login>input{
 	margin: 0.75em;
 	font-size: 1.5em;
+}
+#nueva_receta{
+	text-align: center;
+	margin: 0.75em;
+}
+#nueva_receta>h2{
+	font-size: 2.5em;
+	font-family: 'Lobster', cursive; 
+}
+#nueva_receta>input{
+	margin:0.75em;
+}
+#ingredientes{
+	box-sizing: border-box;
+	margin: 0.5em;
+
+}
+#ingredientes>ul{
+	list-style: none;
+}
+#nueva_receta>img{
+	width:15%;
+}
+#boton_subir{
+	font-size:1.5em;
+}
+#cuerpo_acerca{
+	margin: 0.5em 20%;
+	background-color: white;
+	padding: 0.2em;
 }
 /*MEDIA QUERIES*/
  
